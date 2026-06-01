@@ -2,13 +2,8 @@
     <section class="text-white mt-20" id="projects">
         <div class="px-4 xl:pl-16">
             <div class="mb-4 md:flex md:justify-between xl:pr-16">
-                <h2 class="text-4xl font-bold text-white"> My Latest Projects</h2>
-                <div class="flex space-x-4 mb-4 mt-5 md:mt-0">
-                    <button class="hover:text-primary" v-for="category in ['all', 'web development', 'Mobile App']"
-                        :key="category" @click="() => selectedCategory = category">
-                        {{ category }}
-                    </button>
-                </div>
+                <h2 class="text-4xl font-bold text-white"> Mes Projets</h2>
+                
             </div>
             <ul class="px-4 sm:py-16 xl:pr-16 grid grid-cols-1 gap-6 pt-10 sm:grid-cols-2 md:gap-10 md:pt-12 lg:grid-cols-3"
                 data-aos="fade-right">
@@ -63,63 +58,53 @@ const Projects = ref([
     {
         id: 1,
         category: 'web development',
-        image: 'src/assets/project.png',
-        title: 'project 1',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic tenetur quasi ipsam labore sapiente, accusamus necessitatibus laboriosam non voluptas inventore deserunt dolore modi ex, praesentium at provident nihil magni ratione!',
-        technologies: ['vue.js 3', 'vuex', 'Express'],
-        gitURL: '',
+        image: 'src/assets/cesa.png',
+        title: 'MyCESA',
+        description: 'Plateforme complète de gestion scolaire pour le Groupe COFE-CESA (Abidjan). Application mobile pour étudiants et professeurs, interface web admin, et API REST avec temps réel.',
+        technologies: ['React Native', 'Node.js', 'MySQL', 'LARAVEL 12', 'Express'],
+        gitURL: 'https://github.com/bossombra1/MyCESA',
         webURL: ''
     },
     {
         id: 2,
         category: 'Mobile App',
-        image: 'src/assets/mobile.jpg',
-        title: 'project 1',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic tenetur quasi ipsam labore sapiente, accusamus necessitatibus laboriosam non voluptas inventore deserunt dolore modi ex, praesentium at provident nihil magni ratione!',
-        technologies: ['vue.js 3', 'vuex', 'Express'],
-        gitURL: '',
+        image: 'src/assets/MINDEF.png',
+        title: 'Pension.DTSI',
+        description: 'Plateforme complète de gestion des pensions, droits et invalidités des militaires',
+        technologies: ['PHP', 'MySQL', 'LARAVEL 12'],
+        gitURL: 'https://github.com/bossombra1',
         webURL: ''
     },
     {
         id: 3,
         category: 'web development',
-        image: 'src/assets/project.png',
-        title: 'project 1',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic tenetur quasi ipsam labore sapiente, accusamus necessitatibus laboriosam non voluptas inventore deserunt dolore modi ex, praesentium at provident nihil magni ratione!',
-        technologies: ['vue.js 3', 'vuex', 'Express'],
-        gitURL: '',
+        image: 'src/assets/MINDEF.png',
+        title: 'Fonctionnaire.DTSI',
+        description: 'Plateforme complète de gestion des fonctionnaires civils (enregistrement, congés, affectations)',
+        technologies: ['PHP', 'MySQL', 'LARAVEL 12'],
+        gitURL: 'https://github.com/bossombra1',
         webURL: ''
     },
     {
         id: 4,
         category: 'Mobile App',
-        image: 'src/assets/mobile.jpg',
-        title: 'project 1',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic tenetur quasi ipsam labore sapiente, accusamus necessitatibus laboriosam non voluptas inventore deserunt dolore modi ex, praesentium at provident nihil magni ratione!',
-        technologies: ['vue.js 3', 'vuex', 'Express'],
-        gitURL: '',
+        image: 'src/assets/taches.jpg',
+        title: 'TaskFlow',
+        description: 'Système de gestion de tâches collaboratif. API REST sécurisée avec JWT, frontend Angular moderne, infrastructure Dockerisée.',
+        technologies: ['ANGULAR 20', 'LARAVEL 12', 'PHP', 'MySQL', 'DOCKER', 'JWT'],
+        gitURL: 'https://github.com/bossombra1/taskflow',
         webURL: ''
     },
     {
         id: 5,
         category: 'web development',
-        image: 'src/assets/project.png',
-        title: 'project 1',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic tenetur quasi ipsam labore sapiente, accusamus necessitatibus laboriosam non voluptas inventore deserunt dolore modi ex, praesentium at provident nihil magni ratione!',
-        technologies: ['vue.js 3', 'vuex', 'Express'],
-        gitURL: '',
+        image: 'src/assets/regis.jpg',
+        title: 'Portfolio Personnel',
+        description: 'Site web personnel présentant mes travaux et compétences.',
+        technologies: ['HTML', 'CSS', 'JavaScript'],
+        gitURL: 'https://bossombra1.github.io/Mon-Portfolio/',
         webURL: ''
     },
-    {
-        id: 6,
-        category: 'Mobile App',
-        image: 'src/assets/mobile.jpg',
-        title: 'project 1',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic tenetur quasi ipsam labore sapiente, accusamus necessitatibus laboriosam non voluptas inventore deserunt dolore modi ex, praesentium at provident nihil magni ratione!',
-        technologies: ['vue.js 3', 'vuex', 'Express'],
-        gitURL: '',
-        webURL: ''
-    }
 ]);
 
 const selectedCategory = ref('all');

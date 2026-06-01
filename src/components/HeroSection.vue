@@ -9,25 +9,24 @@
                 <div class="lg:py-6">
                     <div class="text-center lg:text-left">
                         <h1 class="pt-4 text-white font-bold text-4xl md:text-5xl lg:text-6xl">
-                            Hi, I'm <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-pink-500">
-                                Steven
-                            </span>😁
+                            Salut, Je suis <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-pink-500">
+                                Kouame Regis
+                            </span>
                         </h1>
                     </div>
                     <p class="text-gray-300 pt-8 text-center lg:text-left mx-auto max-w-xl">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                         Explicabo eius laboriosam ratione corporis tempore facilis, 
-                         laborum, debitis dolorem accusamus accusantium modi obcaecati? 
+                        Développeur d'application basé à Abidjan, Côte d'Ivoire. 
+                        Je conçois et développe des applications web et mobiles performantes,
+                         de la base de données à l'interface utilisateur.
                     </p>
                     <div class="flex items-center gap-3 pt-9 flex-col sm:flex-row sm:w-max sm:mx-auto lg:mx-0">
-                        <button class="px-6 md:px-7 py-3 rounded-full relative group w-full sm:w-max flex justify-center">
+                        <a href="#contact" class="px-6 md:px-7 py-3 rounded-full relative group w-full sm:w-max flex justify-center">
                             <span class="absolute inset-0 rounded-3xl group-hover:scale-105 origin-center transition-all ease-in-out bg-primary
                             border-2 border-transparent"></span>
-                            <span class="relative flex items-center justify-center text-white">Hire Me</span>
-                        </button>
-                        <button class=" border border-primary px-6 md:px-7 py-3 rounded-full relative group w-full sm:w-max flex justify-center">
-                            <div class="hover:scale-105 transition-all ease-in-out flex justify-center items-center relative">
-                            <div class="svg-container">
+                            <span class="relative flex items-center justify-center text-white">Me contacter</span>
+                        </a>
+                        <a href="/cv.pdf" download="cv.pdf" class="border border-primary px-6 md:px-7 py-3 rounded-full relative group w-full sm:w-max flex justify-center items-center hover:scale-105 transition-all ease-in-out" aria-label="Télécharger le CV">
+                            <div class="svg-container flex items-center">
                                 <svg class="download-icon" width="18" height="22" viewBox="0 0 18 22" fill="none" xmlns="http://www.w3.org/2000/svg" >
                                     <path class="download-arrow" d="M13 9L9 13M9 13L5 9M9 13V1" stroke="#f59e0b"
                                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -37,18 +36,16 @@
                                     20.1213C16.6839 19.5587 17 18.7956 17 18V17"
                                     stroke="#f59e0b" stroke-width="2" stroke-linecap="round" />
                                 </svg>
-                                <div class="download-loader text-white hidden"></div>
+                                <span class="pl-2 text-primary">Télécharger le CV</span>
                             </div>
-                            <a href="/resume.pdf" download="resume.pdf" class="pl-2 text-primary"> Download resume</a>
-                            </div>
-                        </button>
+                        </a>
                     </div>
                 </div>
                 <div class="lg:h-full md:flex">
                     <div class="flex w-full h-96 min-h-[24rem] lg:min-h-[none] lg:w-full lg:h-full items-center relative">
                         <div class="absolute z-0 top-1/2 -translate-y-1/2 w-5/6 right-0 h-[calc(80%+20px)] bg-gradient-to-tr opacity-25 from-[#570cac] to-primary blur-2xl"></div>
                         <div class="absolute h-full z-10 p-2 -translate-y-1/2 top-1/2 lg:right-3 md:right-40 sm:right-16 rounded-full shadow-lg border border-primary">
-                            <img src="@/assets/top_picture.jpg" alt="Hero pic" width="500" height="auto" loading="lazy"
+                            <img src="@/assets/photo.jpeg" alt="Hero pic" width="500" height="auto" loading="lazy"
                             class="w-full h-full rounded-full object-cover"
                             >
                         </div>

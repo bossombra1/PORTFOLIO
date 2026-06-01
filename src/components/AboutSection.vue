@@ -1,72 +1,68 @@
-<template >
+<template>
     <section class="text-white mt-18" id="about">
+        <!-- Effet de halo lumineux en arrière-plan -->
         <div class="absolute z-0 top-[93rem] inset-x-0 h-64 flex items-start">
             <div class="h-24 w-64 bg-gradient-to-br from-primary via-secondary blur-2xl to-[#570cac] opacity-20"></div>
         </div>
-        <div class="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16 z-1">
-            <div data-aos="flip-right">
-                <h2 class="text-4xl font-bold text-white text-left mb-8">My Education</h2>
-                <div class="space-y-8 py-8">
-                    <div v-for="element in education" :key="element.id"
-                    class="flex items-center md:w-[80%] w-full rounded-xl bg-[#111a3e] shadow-lg border border-[#1f1641]"
-                    >
-                        <div class="w-1/4">
-                            <img src="https://img.icons8.com/ios-glyphs/60/ffffff/graduation-cap--v1.png" alt="graduation-cap--v1">
-                        </div>
-                        <div class="w-3/4 pl-4">
-                            <h3 class="text-2xl font-semibold uppercase text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary lg:text-xl">
-                                {{ element.School }}
-                            </h3>
-                            <p class="text-white">{{ element.program }}</p>
-                            <p class="text-white">{{ element.year }}</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="mt-4 md:mt-0 text-left flex flex-col z-10 h-full" data-aos="flip-right">
-                <h2 class="text-4xl font-bold text-white md:text-center text-left mb-4">More
-                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">About</span>
-                    Me
+        
+        <!-- Grille principale sur deux colonnes (Texte à gauche, Image à droite) -->
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16 relative z-10">
+            
+            <!-- COLONNE GAUCHE : Textes et Compteurs (Prend 7 colonnes sur 12 en grand écran) -->
+            <div data-aos="fade-right" class="md:col-span-7 flex flex-col justify-between">
+                <h2 class="text-4xl font-bold text-white text-left mb-6">
+                    En savoir <span class="text-green-500">plus sur moi</span>
                 </h2>
-                <p class="text-base lg:text-lg mt-8 py-8"> Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                     Qui facere libero cupiditate fugit minima voluptates numquam est eos voluptate saepe
-                      eius amet harum provident accusamus omnis sit in cum incidunt dolorum, necessitatibus 
-                      illo reiciendis ipsam debitis velit! Itaque officia architecto fugit, cum dolorum eos dolore 
-                      quaerat quis nobis id similique!
-                </p>
-                <div class="grid grid-cols-3 gap-4 max-w-lg pt-8">
-                    <div class="text-center rounded-xl bg-[#111a3e] shadow-lg border border-[#1f1641] p-3">
-                        <h3 class="text-white font-bold text-xl sm:text-2xl lg:text-3xl">+200</h3>
-                        <p class="text-sm sm:text-base text-gray-300">Happy Client</p>
-                    </div>
-                    <div class="text-center rounded-xl bg-[#111a3e] shadow-lg border border-[#1f1641] p-3">
-                        <h3 class="text-white font-bold text-xl sm:text-2xl lg:text-3xl">+300</h3>
-                        <p class="text-sm sm:text-base text-gray-300">Project</p>
-                    </div>
+                
+                <div class="space-y-4 text-base lg:text-lg text-gray-300 leading-8 mb-8">
+                    <p>
+                        Passionné par l'informatique et les nouvelles technologies, je suis un développeur d'applications junior avec une  formation en programmation et en gestion des systèmes informatiques. 
+                    </p>
+                    <p>
+                        Créatif, rigoureux et curieux, j'ai acquis une précieuse expérience pratique au <strong>Ministère de la Défense</strong> où j'ai conçu des applications de gestion et de suivi de pensions critiques pour l'administration.
+                    </p>
+                </div>
 
-                    <div class="text-center rounded-xl bg-[#111a3e] shadow-lg border border-[#1f1641] p-3">
-                        <h3 class="text-white font-bold text-xl sm:text-2xl lg:text-3xl">+7</h3>
-                        <p class="text-sm sm:text-base text-gray-300"> Years Experience</p>
+                <!-- Les 3 petites cartes/compteurs du bas -->
+                <div class="grid grid-cols-3 gap-4">
+                    <!-- Carte 1 -->
+                    <div class="bg-[#111a3e] border border-[#1f1641] rounded-2xl p-4 text-center shadow-lg">
+                        <h3 class="text-2xl lg:text-3xl font-bold text-green-500">+3</h3>
+                        <p class="text-xs lg:text-sm text-gray-400 uppercase tracking-wider mt-1">Technologies</p>
+                    </div>
+                    <!-- Carte 2 -->
+                    <div class="bg-[#111a3e] border border-[#1f1641] rounded-2xl p-4 text-center shadow-lg">
+                        <h3 class="text-2xl lg:text-3xl font-bold text-green-500">+3</h3>
+                        <p class="text-xs lg:text-sm text-gray-400 uppercase tracking-wider mt-1">Applications</p>
+                    </div>
+                    <!-- Carte 3 -->
+                    <div class="bg-[#111a3e] border border-[#1f1641] rounded-2xl p-4 text-center shadow-lg">
+                        <h3 class="text-2xl lg:text-3xl font-bold text-green-500">Stage</h3>
+                        <p class="text-xs lg:text-sm text-gray-400 uppercase tracking-wider mt-1">Expérience</p>
                     </div>
                 </div>
             </div>
+
+            <!-- COLONNE DROITE : L'image stylisée (Prend 5 colonnes sur 12 en grand écran) -->
+            <div data-aos="fade-left" class="md:col-span-5 flex justify-center mt-8 md:mt-0">
+                <div class="relative w-72 h-72 sm:w-80 sm:h-80 lg:w-96 lg:h-96">
+                    <!-- Cercle de fond coloré (Ici vert pour correspondre à l'image, vous pouvez mettre 'bg-primary') -->
+                    <div class="absolute inset-0 bg-green-600 rounded-full overflow-hidden border-2 border-green-500 shadow-2xl custom-profile-shape">
+                        <!-- Votre photo (pensez à placer votre image dans le dossier public et ajuster le chemin) -->
+                        <img src="@/assets/moi.jpeg" alt="Regis Kouame" class="w-full h-full object-cover object-top pt-4" />
+                    </div>
+                    <!-- Petit cercle de contour décoratif décalé visible sur la maquette -->
+                    <div class="absolute inset-0 border border-green-500 rounded-full transform translate-x-2 translate-y-2 pointer-events-none opacity-50"></div>
+                </div>
+            </div>
+
         </div>
     </section>
 </template>
-<script setup>
-import { ref } from 'vue';
-const education=ref([
-    {
-        id:1,
-        School:'school 1',
-        program:'Software Engineer',
-        year:'2022'
-    },
-    {
-        id:2,
-        School:'school 2',
-        program:'Software Engineer',
-        year:'2020'
-    }
-])
-</script>
+
+<style scoped>
+/* Optionnel : Pour donner une forme légèrement asymétrique comme sur l'image_7cca7c.png */
+.custom-profile-shape {
+    border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
+}
+</style>
