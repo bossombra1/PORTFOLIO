@@ -1,3 +1,40 @@
+<script setup>
+import { ref } from 'vue';
+const Skills =ref([
+    {
+        id:1,
+        name:'HTmL & CSS',
+        width:'85%'
+    },
+    { 
+        id:2,
+        name:'PHP',
+        width:'60%'
+    },
+    {
+        id:3,
+        name:'JavaScript',
+        width:'58%'
+    },
+    {
+        id:4,
+        name:'figma',
+        width:'81%'
+    },
+]);
+
+const Experinces =ref([
+    {
+        id:1,
+        role:'Stagiaire Développeur d\'Application',
+        company:'Ministère de la Défense',
+        date:'Juin 2025 - Décembre 2025'
+    },
+    
+])
+</script>
+
+
 <template>
     <section class="text-white mt-18" id="skills">
         <div class="absolute right-0 top-[110rem] h-full w-full justify-end">
@@ -45,38 +82,3 @@
         </div>
     </section>
 </template>
-<script setup>
-import { ref } from 'vue';
-const Skills =ref([
-    {
-        id:1,
-        name:'HTmL & CSS',
-        width:'85%'
-    },
-    {
-        id:2,
-        name:'PHP',
-        width:'70%'
-    },
-    {
-        id:3,
-        name:'JavaScript',
-        width:'58%'
-    },
-    {
-        id:4,
-        name:'figma',
-        width:'81%'
-    },
-]);
-
-const Experinces =ref([
-    {
-        id:1,
-        role:'Stagiaire Développeur d\'Application',
-        company:'Ministère de la Défense',
-        date:'Juin 2025 - Décembre 2025'
-    },
-    
-])
-</script>

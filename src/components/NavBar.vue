@@ -1,3 +1,24 @@
+<script setup>
+import { ref } from 'vue';   //ref permet de rendre une variable réactive.
+const Menu =ref([
+    {name:'A propos',href:'#about'},
+    {name:'Compétences',href:'#skills'},
+    {name:'Projets',href:'#projects'},
+    {name:'Contact',href:'#contact'},
+]);
+
+const isMenuOpen =ref(false)    ;
+const scrollToSection =(href)=>{    
+    isMenuOpen.value=false;
+    const section=document.querySelector(href);
+    if(section){
+        section.scrollIntoView({behavior :'smooth'});
+    }
+
+}
+
+</script>
+
 <template>
     <header class="flex justify-between items-center p-6 bg-opacity-50 relative z-20 ">
         <div class="text-white text-3xl font-bold">PORTFOLIO<span class ="text-primary">.</span></div>
@@ -34,23 +55,3 @@
           </nav>
     </header>
 </template>
-<script setup>
-import { ref } from 'vue';
-const Menu =ref([
-    {name:'A propos',href:'#about'},
-    {name:'Compétences',href:'#skills'},
-    {name:'Projets',href:'#projects'},
-    {name:'Contact',href:'#contact'},
-]);
-
-const isMenuOpen =ref(false)
-const scrollToSection =(href)=>{
-    isMenuOpen.value=false;
-    const section=document.querySelector(href);
-    if(section){
-        section.scrollIntoView({behavior :'smooth'});
-    }
-
-}
-
-</script>

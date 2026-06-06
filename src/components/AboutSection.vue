@@ -1,6 +1,6 @@
 <template>
     <section class="text-white mt-18" id="about">
-        <!-- Effet de halo lumineux en arrière-plan -->
+        <!-- Effet lumineux en arrière-plan -->
         <div class="absolute z-0 top-[93rem] inset-x-0 h-64 flex items-start">
             <div class="h-24 w-64 bg-gradient-to-br from-primary via-secondary blur-2xl to-[#570cac] opacity-20"></div>
         </div>
@@ -8,7 +8,7 @@
         <!-- Grille principale sur deux colonnes (Texte à gauche, Image à droite) -->
         <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16 relative z-10">
             
-            <!-- COLONNE GAUCHE : Textes et Compteurs (Prend 7 colonnes sur 12 en grand écran) -->
+            <!-- COLONNE GAUCHE : Textes et Compteurs  -->
             <div data-aos="fade-right" class="md:col-span-7 flex flex-col justify-between">
                 <h2 class="text-4xl font-bold text-white text-left mb-6">
                     En savoir <span class="text-green-500">plus sur moi</span>
@@ -43,15 +43,15 @@
                 </div>
             </div>
 
-            <!-- COLONNE DROITE : L'image stylisée (Prend 5 colonnes sur 12 en grand écran) -->
+            <!-- COLONNE DROITE : L'image  -->
             <div data-aos="fade-left" class="md:col-span-5 flex justify-center mt-8 md:mt-0">
                 <div class="relative w-72 h-72 sm:w-80 sm:h-80 lg:w-96 lg:h-96">
-                    <!-- Cercle de fond coloré (Ici vert pour correspondre à l'image, vous pouvez mettre 'bg-primary') -->
+                    <!-- Cercle de fond coloré  -->
                     <div class="absolute inset-0 bg-green-600 rounded-full overflow-hidden border-2 border-green-500 shadow-2xl custom-profile-shape">
-                        <!-- Votre photo (pensez à placer votre image dans le dossier public et ajuster le chemin) -->
+                        <!-- Ma photo  -->
                         <img src="@/assets/moi.jpeg" alt="Regis Kouame" class="w-full h-full object-cover object-top pt-4" />
                     </div>
-                    <!-- Petit cercle de contour décoratif décalé visible sur la maquette -->
+                    <!-- Petit cercle de contour décoratif décalé visible  -->
                     <div class="absolute inset-0 border border-green-500 rounded-full transform translate-x-2 translate-y-2 pointer-events-none opacity-50"></div>
                 </div>
             </div>
@@ -61,7 +61,7 @@
 </template>
 
 <style scoped>
-/* Optionnel : Pour donner une forme légèrement asymétrique comme sur l'image_7cca7c.png */
+/* Pour donner une forme légèrement asymétrique  */
 .custom-profile-shape {
     border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
 }
